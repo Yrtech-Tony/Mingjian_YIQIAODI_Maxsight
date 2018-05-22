@@ -323,12 +323,12 @@ namespace XHX.View
                 if (!string.IsNullOrEmpty(shopCode))
                 {
                     string shopName = msExcelUtil.GetCellValue(worksheet_FengMian, "B", i);
-                    string areaCode = msExcelUtil.GetCellValue(worksheet_FengMian, "E", i);
-                    string province = msExcelUtil.GetCellValue(worksheet_FengMian, "F", i);
-                    string city = msExcelUtil.GetCellValue(worksheet_FengMian, "G", i);
-                    string group = msExcelUtil.GetCellValue(worksheet_FengMian, "H", i);
-                    string salesOrAftersales = msExcelUtil.GetCellValue(worksheet_FengMian, "I", i);
-                    string carType = msExcelUtil.GetCellValue(worksheet_FengMian, "J", i);
+                    string areaCode = msExcelUtil.GetCellValue(worksheet_FengMian, "C", i);
+                    string province = msExcelUtil.GetCellValue(worksheet_FengMian, "D", i);
+                    string city = msExcelUtil.GetCellValue(worksheet_FengMian, "E", i);
+                    string group = msExcelUtil.GetCellValue(worksheet_FengMian, "F", i);
+                    string salesOrAftersales = msExcelUtil.GetCellValue(worksheet_FengMian, "G", i);
+                    string carType = msExcelUtil.GetCellValue(worksheet_FengMian, "H", i);
                     webService.SaveShop(areaCode, "", shopCode, shopName, true, this.UserInfoDto.UserID, province, city, salesOrAftersales, group, carType);
                 }
                 else
