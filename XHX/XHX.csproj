@@ -39,7 +39,7 @@
     <PublisherName>北京怡睿科技发展有限公司</PublisherName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>false</BootstrapperEnabled>
@@ -1488,184 +1488,238 @@
     <None Include="XHX_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <PublishFile Include="AxInterop.DSOFramer">
+    <PublishFile Include="Aliyun.OpenServices">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="AxInterop.DSOFramer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DbAccess">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="DevExpress.BonusSkins.v9.1">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="DevExpress.Data.v9.1">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="DevExpress.OfficeSkins.v9.1">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="DevExpress.Utils.v9.1">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="DevExpress.XtraEditors.v9.1">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="DevExpress.XtraEditors.v9.1.Design">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="DevExpress.XtraGrid.v9.1">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="DevExpress.XtraGrid.v9.1.Design">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="DevExpress.XtraLayout.v9.1">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="DevExpress.XtraNavBar.v9.1">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="ICSharpCode.SharpZipLib">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="ICSLib.Controls">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics3.Excel.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="Interop.DSOFramer">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="KP-ImageViewerV2">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="log4net">
       <Visible>False</Visible>
-      <PublishState>Exclude</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Office.Interop.Excel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Vbe.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="office">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="OfficeControl">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="SQLite.Interop.dll">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>File</FileType>
     </PublishFile>
     <PublishFile Include="stdole">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="System.Data.SQLite">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
   </ItemGroup>
