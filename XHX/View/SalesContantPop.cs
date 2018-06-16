@@ -88,7 +88,7 @@ namespace XHX.View
             }
             else
             {
-                if (userDto.RoleType == "I" && pageName == "ExecuteTeamAlter")
+                if (userDto.RoleType == "I")
                 {
                     DataSet ds1 = service.SearchRecheckStatus(projectCode, shopCode);
                     string statusCode = "";
@@ -96,7 +96,12 @@ namespace XHX.View
                     {
                         statusCode = ds1.Tables[0].Rows[0]["StatusCode"].ToString();
                     }
-                    if (statusCode == "S2")
+                    if (string.IsNullOrEmpty(statusCode))
+                    {
+                        btnSave.Enabled = true;
+                        btnSaveLossDesc.Enabled = true;
+                    }
+                    else if (statusCode == "S2" && pageName == "ExecuteTeamAlter")
                     {
                         btnSave.Enabled = true;
                         btnSaveLossDesc.Enabled = true;
@@ -233,13 +238,13 @@ namespace XHX.View
         {
             SalesConsultantDto loss = new SalesConsultantDto();
             List<SalesConsultantDto> inspectionList = grcSaleContant.DataSource as List<SalesConsultantDto>;
-            DataSet ds = service.SearchSalesConsultanMaxSeqNO(CommonHandler.GetComboBoxSelectedValue(cboProject).ToString(), _shopCode);
+            // DataSet ds = service.SearchSalesConsultanMaxSeqNO(CommonHandler.GetComboBoxSelectedValue(cboProject).ToString(), _shopCode);
             int seqNO = 0;
-            if (ds != null && ds.Tables[0].Rows.Count > 0)
-            {
-                seqNO = Convert.ToInt32(ds.Tables[0].Rows[0]["SeqNO"]);
-            }
-            if (seqNO == 0)
+            //if (ds != null && ds.Tables[0].Rows.Count > 0)
+            //{
+            //    seqNO = Convert.ToInt32(ds.Tables[0].Rows[0]["SeqNO"]);
+            //}
+            if (inspectionList.Count == 0)
             {
                 loss.SeqNO = 1;
             }
@@ -255,6 +260,7 @@ namespace XHX.View
                 }
                 loss.SeqNO = seqNO + 1;
             }
+           // loss.Score = Convert.ToDecimal(txtFullScore.Text);
             dataHandler.AddRow(loss);
         }
         private void btnSave_Click(object sender, EventArgs e)
