@@ -565,10 +565,11 @@ namespace XHX.View
             Workbook workbook = msExcelUtil.OpenExcelByMSExcel(buttonEdit1.Text);
             Worksheet worksheet_FengMian = workbook.Worksheets["Sheet1"] as Worksheet;
            //string projectCode = CommonHandler.GetComboBoxSelectedValue(cboProjects).ToString();
-            for (int i = 2; i < 100; i++)
+            for (int i = 2; i < 1000; i++)
             {
                 string projectCode = msExcelUtil.GetCellValue(worksheet_FengMian, "A", i).ToString();
                 string shopCode = msExcelUtil.GetCellValue(worksheet_FengMian, "B", i).ToString();
+                if (string.IsNullOrEmpty(shopCode)) break;
                 if (!string.IsNullOrEmpty(shopCode))
                 {
                     string salesName = msExcelUtil.GetCellValue(worksheet_FengMian, "C", i).ToString();
